@@ -67,11 +67,18 @@ tensorflow/core/kernels/depthwise_conv_op_gpu.cu.cc
 tensorflow/core/kernels/split_lib_gpu.cu.cc 
 tensorflow/core/kernels/concat_lib_gpu.impl.cu.cc 
 ```
-For example, 
+For example:
 ```
 extern shared __align(sizeof(T))__ unsigned char smem[]; => extern shared unsigned char smem[];
 ```
-
+Comment out 
+```
+linkopts = [“-lgomp”]
+```
+in 
+```
+tensorflow/third_party/gpus/cuda/BUILD.tpl
+```
 ## modify ~/.bash_profile
 ```
 export PATH="$PATH:$HOME/bin"  # This is for installing bazel from binary that bazel locates in #HOME/bin
