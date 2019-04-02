@@ -190,5 +190,7 @@ It should give a matrix in the end.
 
 # References
 https://gist.github.com/smitshilu/53cf9ff0fd6cdb64cca69a7e2827ed0f
+
 https://gist.github.com/ageitgey/819a51afa4613649bd18
+
 https://gist.github.com/Willian-Zhang/a3bd10da2d8b343875f3862b2a62eb3b
