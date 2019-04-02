@@ -2,13 +2,13 @@
 MacBook pro 15 (mid-2014) with Nvidia GT 750M 2G (GPU compute capacity 3.0)
 
 ## MacOS High Sierra 10.13.6 
-Fresh install, no any updates.
+Fresh install, don't install any updates.
 
 ## brew (latest)
-installl brew and update to the latest
+Installl brew and update to the latest
 
 ## GPU web driver 387.10.10.10.40.105
-https://github.com/vulgo/webdriver.sh \
+https://github.com/vulgo/webdriver.sh 
 ```
 brew tap vulgo/repo 
 brew install webdriver.sh 
@@ -30,8 +30,8 @@ Need register on the Nvidia web then download.
 Need register on the Nvidia web then download.
 
 ## Xcode 9.2
-From apple app store.
-change its name to Xcode9.2.app then move it to Application.
+From apple app store,change its name to Xcode9.2.app then move it to Application. \
+Change to xcode 9.2 developer environment.
 ```
 sudo xcode-select -s /Application/Xcode9.2.app
 ```
