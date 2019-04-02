@@ -7,8 +7,9 @@ Fresh install, no any updates.
 ## brew (latest)
 installl brew and update to the latest
 ## GPU web driver 387.10.10.10.40.105
-brew tap vulgo/repo
-brew install webdriver.sh
+https://github.com/vulgo/webdriver.sh \
+brew tap vulgo/repo \
+brew install webdriver.sh \
 webdriver
 
 ## CUDA driver 410.130
