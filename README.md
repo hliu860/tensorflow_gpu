@@ -13,12 +13,12 @@ brew install webdriver.sh \
 webdriver
 \
 ## CUDA driver 410.130
-Download from nvidia website. \
+Download from nvidia website. 
 https://www.nvidia.com/object/mac-driver-archive.html 
-\
+
 ## CUDA Toolkit 10.0
 https://developer.nvidia.com/cuda-toolkit-archive
-\
+
 ## cuDNN 7.4.1
 Need register on the Nvidia web then download.
 ## nccl 2.4.2  
