@@ -17,7 +17,7 @@ jupyter notebook
 From the 'New' drop-down menu select the 'TensorFlow-GPU' kernel that was added, then start coding.
 
 ## MNIST example
-Following are Python snippets you can copy into cells in your Jupyter notebook to setup and train LeNet-5 with MNIST digits data.
+Following are Python snippets that can be copied into cells in the Jupyter notebook to setup and train LeNet-5 with MNIST digits data.
 
 ```
 import tensorflow as tf
