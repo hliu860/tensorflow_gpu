@@ -8,7 +8,7 @@ MacBook pro 15 (mid-2014) with Nvidia GT 750M 2G (GPU compute capacity 3.0)
 ## CUDA driver 410.130
 ## CUDA Toolkit 10.0
 ## cuDNN 7.4
-## nccl 2.4.2  (not configured)
+## nccl 2.4.2  (not configured, not used for signle GPU but will be useful for multiple GPUs)
 ## Xcode 9.2
 
 ## brew (latest)
