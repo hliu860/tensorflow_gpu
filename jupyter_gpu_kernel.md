@@ -14,7 +14,7 @@ Then open a jupyter notebook.
 ```
 jupyter notebook
 ```
-From the 'New' drop-down menu select the 'TensorFlow-GPU' kernel that was added, time to start writing code.
+From the 'New' drop-down menu select the 'TensorFlow-GPU' kernel that was added, then write.
 ```
 import tensorflow as tf
 print ("TensorFlow version: " + tf.__version__)
