@@ -63,7 +63,11 @@ csrutil status
 csrutil enable
 ```
 ### 2
-Remove all align(sizeof(T)) from following 3 files: 
+Remove all 
+```
+__align(sizeof(T))__
+```
+from following 3 files: 
 ```
 tensorflow/core/kernels/depthwise_conv_op_gpu.cu.cc 
 tensorflow/core/kernels/split_lib_gpu.cu.cc 
@@ -105,7 +109,7 @@ Inside tensorflow
 No to unnessary options \
 Yes to CUDA and cuDNN, compute capacity is 3.0
 
-## A preprocess
+## A workaround for bazel
 ```
 echo $TMP
 sudo mkdir -p $TMP   # This is a workaround for bazel, bazel does not create any files in that dir during compiling.
