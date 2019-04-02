@@ -59,6 +59,14 @@ Change to xcode 9.2 developer environment.
 sudo xcode-select -s /Application/Xcode9.2.app
 ```
 
+## Compile CUDA samples
+Compile some CUDA samples to check if the GPU is correctly recognized and supported.
+```
+cd /Developer/NVIDIA/CUDA-10.0/samples
+make -C 1_Utilities/deviceQuery
+./bin/x86_64/darwin/release/deviceQuery
+```
+
 ## bazel 0.21.0
 From bazel binary, tensorflow 1.13.1 needs bazel 0.21.0 to compile.
 ```
