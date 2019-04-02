@@ -63,11 +63,7 @@ csrutil status
 csrutil enable
 ```
 ### 2
-Remove all 
-```
-__align(sizeof(T))__
-```
-from following 3 files: 
+Remove all `__align(sizeof(T))__` from following 3 files: 
 ```
 tensorflow/core/kernels/depthwise_conv_op_gpu.cu.cc 
 tensorflow/core/kernels/split_lib_gpu.cu.cc 
