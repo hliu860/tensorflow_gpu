@@ -22,25 +22,25 @@ webdriver
 ```
 
 ## CUDA driver 410.130
-Download from nvidia website. \
+Download and install. \
 https://www.nvidia.com/object/mac-driver-archive.html 
 
 ## CUDA Toolkit 10.0
+Download and install. \
 https://developer.nvidia.com/cuda-toolkit-archive
 
 ## cuDNN 7.4.1
 Need register on the Nvidia web then download, \
 then move them to `/usr/local/cuda` which is the main cuda directory.
-
 ```
-tar zxvf ~/Downloads/cudnn-10.0-osx-x64-v7.4.1.5
+tar zxvf ~/Downloads/cudnn-10.0-osx-x64-v7.4.1.5.tar
 sudo mv -v cuda/lib/libcudnn* /usr/local/cuda/lib
 sudo mv -v cuda/include/cudnn.h /usr/local/cuda/include
 ```
 
 ## nccl 2.4.2  
 (not configured, not used for signle GPU but will be useful for multiple GPUs) \
-Need register on the Nvidia web then download.
+Need register on the Nvidia web then download and move to `/usr/local/`
 ```
 xz -d nccl_2.4.2-1+cuda10.0_x86_64.txz
 tar xvf nccl_2.4.2-1+cuda10.0_x86_64.tar
