@@ -127,6 +127,7 @@ echo $TMP
 sudo mkdir -p $TMP   # This is a workaround for bazel, bazel does not create any files in that dir during compiling.
 ```
 ## Compile
+It took more than 1 hour to compile, about 90 mins.
 ```
 bazel build  --config=noaws --config=nogcp --config=nohdfs --config=noignite  --config=nokafka  --config=nonccl --verbose_failures --config=cuda --config=opt --action_env PATH --action_env LD_LIBRARY_PATH --action_env DYLD_LIBRARY_PATH //tensorflow/tools/pip_package:build_pip_package
 ```
