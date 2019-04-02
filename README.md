@@ -61,10 +61,12 @@ After all done enable it in recovery mode.
 csrutil status
 csrutil enable
 ```
-Remove all align(sizeof(T)) from following 3 files: \
-tensorflow/core/kernels/depthwise_conv_op_gpu.cu.cc \
-tensorflow/core/kernels/split_lib_gpu.cu.cc \
-tensorflow/core/kernels/concat_lib_gpu.impl.cu.cc \
+Remove all align(sizeof(T)) from following 3 files: 
+```
+tensorflow/core/kernels/depthwise_conv_op_gpu.cu.cc 
+tensorflow/core/kernels/split_lib_gpu.cu.cc 
+tensorflow/core/kernels/concat_lib_gpu.impl.cu.cc 
+```
 For example, 
 ```
 extern shared __align(sizeof(T))__ unsigned char smem[]; => extern shared unsigned char smem[];
