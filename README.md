@@ -23,7 +23,9 @@ https://www.nvidia.com/object/mac-driver-archive.html
 https://developer.nvidia.com/cuda-toolkit-archive
 
 ## cuDNN 7.4.1
-Need register on the Nvidia web then download. \
+Need register on the Nvidia web then download, \
+then move them to `/usr/local/cuda` which is the main cuda directory.
+
 ```
 tar zxvf ~/Downloads/cudnn-10.0-osx-x64-v7.4.1.5
 sudo mv -v cuda/lib/libcudnn* /usr/local/cuda/lib
