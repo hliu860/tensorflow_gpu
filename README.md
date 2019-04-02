@@ -5,7 +5,14 @@ MacBook pro 15 (mid-2014) with Nvidia GT 750M 2G (GPU compute capacity 3.0)
 Fresh install, don't install any updates.
 
 ## brew (latest)
-Installl brew and update to the latest
+Installl brew and update to the latest.
+```
+brew update
+brew upgrade
+brew install coreutils
+brew install swig
+(brew install bazel) # This will install lastest bazel but it's not ok for compile tensorflow 1.13.1, may be ok in the future.
+```
 
 ## GPU web driver 387.10.10.10.40.105
 https://github.com/vulgo/webdriver.sh 
