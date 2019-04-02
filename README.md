@@ -64,7 +64,36 @@ csrutil status
 csrutil disable
 ```
 After all done enable it.
+## modify ~/.bash_profile
+```
+# source .bashrc
 
+
+# source /Users/haipeng/.bazel/bin/bazel-complete.bash
+export PATH="$PATH:$HOME/bin"
+
+export TMP=/c/tempdir
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+alias ll='ls -al'
+test -r /sw/bin/init.sh && . /sw/bin/init.sh
+
+export LC_CTYPE=C
+export LANG=C
+
+# export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
+export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
+export PATH=$DYLD_LIBRARY_PATH:$PATH
+export PATH="/usr/local/cuda/bin":$PATH
+
+
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+```
 ## Compile
 ```
 bazel build  --config=noaws --config=nogcp --config=nohdfs --config=noignite  --config=nokafka  --config=nonccl --verbose_failures --config=cuda --config=opt --action_env PATH --action_env LD_LIBRARY_PATH --action_env DYLD_LIBRARY_PATH //tensorflow/tools/pip_package:build_pip_package
