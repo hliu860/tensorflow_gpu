@@ -41,6 +41,16 @@ sudo mv -v cuda/include/cudnn.h /usr/local/cuda/include
 ## nccl 2.4.2  
 (not configured, not used for signle GPU but will be useful for multiple GPUs) \
 Need register on the Nvidia web then download.
+```
+xz -d nccl_2.4.2-1+cuda10.0_x86_64.txz
+tar xvf nccl_2.4.2-1+cuda10.0_x86_64.tar
+
+cd nccl_2.1.15-1+cuda9.1_x86_64
+sudo mkdir -p /usr/local/nccl
+sudo mv * /usr/local/nccl
+sudo mkdir -p /usr/local/include/third_party/nccl
+sudo ln -s /usr/local/nccl/include/nccl.h /usr/local/include/third_party/nccl
+```
 
 ## Xcode 9.2
 From apple app store,change its name to Xcode9.2.app then move it to Application. \
@@ -181,4 +191,4 @@ It should give a matrix in the end.
 # References
 https://gist.github.com/smitshilu/53cf9ff0fd6cdb64cca69a7e2827ed0f
 https://gist.github.com/ageitgey/819a51afa4613649bd18
-
+https://gist.github.com/Willian-Zhang/a3bd10da2d8b343875f3862b2a62eb3b
