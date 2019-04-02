@@ -51,6 +51,7 @@ git checkout r1.13
 ```
 
 ## Some modification to the source
+### 1
 Disable SIP, in recovery mode (command+R before mac starts)
 ```
 csrutil status
@@ -61,6 +62,7 @@ After all done enable it in recovery mode.
 csrutil status
 csrutil enable
 ```
+### 2
 Remove all align(sizeof(T)) from following 3 files: 
 ```
 tensorflow/core/kernels/depthwise_conv_op_gpu.cu.cc 
@@ -71,6 +73,7 @@ For example:
 ```
 extern shared __align(sizeof(T))__ unsigned char smem[]; => extern shared unsigned char smem[];
 ```
+### 3
 Comment out 
 ```
 linkopts = [“-lgomp”]
