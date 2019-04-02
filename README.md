@@ -78,7 +78,8 @@ Inside tensorflow
 ```
 ./configure
 ```
-No to unnessary options and yes to CUDA and cuDNN, compute capacity is 3.0
+No to unnessary options \
+Yes to CUDA and cuDNN, compute capacity is 3.0
 
 ## A preprocess
 ```
