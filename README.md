@@ -11,7 +11,7 @@ https://github.com/vulgo/webdriver.sh \
 brew tap vulgo/repo \
 brew install webdriver.sh \
 webdriver
-\
+
 ## CUDA driver 410.130
 Download from nvidia website. 
 https://www.nvidia.com/object/mac-driver-archive.html 
@@ -21,10 +21,21 @@ https://developer.nvidia.com/cuda-toolkit-archive
 
 ## cuDNN 7.4.1
 Need register on the Nvidia web then download.
+
 ## nccl 2.4.2  
 (not configured, not used for signle GPU but will be useful for multiple GPUs)
 Need register on the Nvidia web then download.
+
 ## Xcode 9.2
+From apply app store.
+
 ## bazel 0.21.0
+From bazel binary.
+
 ## Anaconda python 3.6.8
+Download and install anaconda then make a virtual environment with python 3.6
+
 ## Tensorflow 1.13.1
+```
+git clone https://github.com/tensorflow/tensorflow.git
+```
