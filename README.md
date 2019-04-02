@@ -66,33 +66,17 @@ csrutil disable
 After all done enable it.
 ## modify ~/.bash_profile
 ```
-# source .bashrc
+export PATH="$PATH:$HOME/bin"  # This is for installing bazel from binary that bazel locates in #HOME/bin
 
+export TMP=/c/tempdir  # This is for bazel that it somehow auto configure $TMP to c:/windows/tmp 
 
-# source /Users/haipeng/.bazel/bin/bazel-complete.bash
-export PATH="$PATH:$HOME/bin"
-
-export TMP=/c/tempdir
-
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-alias ls='ls -GFh'
-alias ll='ls -al'
-test -r /sw/bin/init.sh && . /sw/bin/init.sh
-
-export LC_CTYPE=C
-export LANG=C
-
-# export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH
 export CUDA_HOME=/usr/local/cuda
 export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
 export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
 export PATH=$DYLD_LIBRARY_PATH:$PATH
 export PATH="/usr/local/cuda/bin":$PATH
 
-
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"   # This not sure if it is useful.
 ```
 ## Compile
 ```
