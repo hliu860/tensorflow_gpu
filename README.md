@@ -10,7 +10,7 @@ Installl brew and update to the latest.
 brew update
 brew upgrade
 brew install coreutils
-brew install swig  # This is not sure its function.
+brew install swig  # This one not sure its function.
 ```
 
 ## GPU web driver 387.10.10.10.40.105
