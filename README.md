@@ -121,4 +121,4 @@ sudo pip install  /tmp/tensorflow_pkg/tensorflow-1.13.1-cp36-cp36m-macosx_10_7_x
 ```
 ## keep wheel file for future use
 ```
-mv /tmp/tensorflow_pkg/tensorflow-1.13.1-cp36-cp36m-macosx_10_7_x86_64.whl  ~/
+mv /tmp/tensorflow_pkg/tensorflow-1.13.1-cp36-cp36m-macosx_10_7_x86_64.whl  ~
