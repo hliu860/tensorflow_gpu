@@ -56,7 +56,11 @@ Disable SIP, in recovery mode (command+R before mac starts)
 csrutil status
 csrutil disable
 ```
-After all done enable it.
+After all done enable it in recovery mode.
+```
+csrutil status
+csrutil enable
+```
 
 ## modify ~/.bash_profile
 ```
