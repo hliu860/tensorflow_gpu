@@ -138,3 +138,8 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 # Runs the op.
 print(sess.run(c))
 ```
+It should give a matrix in the end.
+```
+[[ 22.  28.]
+ [ 49.  64.]]
+```
