@@ -11,7 +11,6 @@ brew update
 brew upgrade
 brew install coreutils
 brew install swig
-(brew install bazel) # This will install lastest bazel but it's not ok for compile tensorflow 1.13.1, may be ok in the future.
 ```
 
 ## GPU web driver 387.10.10.10.40.105
@@ -51,7 +50,11 @@ sudo xcode-select -s /Application/Xcode9.2.app
 ```
 
 ## bazel 0.21.0
-From bazel binary, tensorflow 1.13.1 needs bazel 0.12.0 to compile.
+From bazel binary, tensorflow 1.13.1 needs bazel 0.21.0 to compile.
+```
+# This will install lastest bazel but it's not ok to compile tensorflow 1.13.1, may be ok in the future.
+(brew install bazel) 
+```
 
 ## Anaconda python 3.6.8
 Download and install anaconda then make a virtual environment with python 3.6.8
