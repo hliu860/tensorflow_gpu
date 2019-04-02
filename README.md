@@ -87,8 +87,8 @@ Yes to CUDA and cuDNN, compute capacity is 3.0
 
 ## A preprocess
 ```
-sudo mkdir /c/tempdir   # This is a workaround for bazel, bazel does not create any files in that dir during compiling.
 echo $TMP
+sudo mkdir -p $TMP   # This is a workaround for bazel, bazel does not create any files in that dir during compiling.
 ```
 ## Compile
 ```
@@ -99,3 +99,6 @@ bazel build  --config=noaws --config=nogcp --config=nohdfs --config=noignite  --
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 sudo pip install  /tmp/tensorflow_pkg/tensorflow-1.13.1-cp36-cp36m-macosx_10_7_x86_64.whl 
 ```
+## keep wheel file for future use
+```
+mv /tmp/tensorflow_pkg/tensorflow-1.13.1-cp36-cp36m-macosx_10_7_x86_64.whl  ~/
