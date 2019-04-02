@@ -50,13 +50,6 @@ git status
 git checkout r1.13
 ```
 
-## configure
-Inside tensorflow 
-```
-./configure
-```
-No to unnessary options and yes to CUDA and cuDNN, compute capacity is 3.0
-
 ## Some modification to the source
 Disable SIP, in recovery mode (command+R before mac starts)
 ```
@@ -64,6 +57,7 @@ csrutil status
 csrutil disable
 ```
 After all done enable it.
+
 ## modify ~/.bash_profile
 ```
 export PATH="$PATH:$HOME/bin"  # This is for installing bazel from binary that bazel locates in #HOME/bin
@@ -77,6 +71,19 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH
 export PATH="/usr/local/cuda/bin":$PATH
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"   # This not sure if it is useful.
+```
+
+## configure
+Inside tensorflow 
+```
+./configure
+```
+No to unnessary options and yes to CUDA and cuDNN, compute capacity is 3.0
+
+## A preprocess
+```
+sudo mkdir /c/tempdir   # This is a workaround for bazel, bazel does not create any files in that dir during compile.
+echo $TMP
 ```
 ## Compile
 ```
