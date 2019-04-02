@@ -1,4 +1,3 @@
-# tensorflow_gpu
 # Tensorflow with Nvidia GPU support for MacOS High Sierra 10.13.6 fresh install.
 
 ## Tensorflow 1.13.1
