@@ -71,7 +71,11 @@ tensorflow/core/kernels/concat_lib_gpu.impl.cu.cc
 ```
 For example:
 ```
-extern shared __align(sizeof(T))__ unsigned char smem[]; => extern shared unsigned char smem[];
+extern shared __align(sizeof(T))__ unsigned char smem[];
+```
+becomes
+```
+extern shared unsigned char smem[];
 ```
 ### 3
 Comment out 
