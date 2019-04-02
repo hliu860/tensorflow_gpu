@@ -10,7 +10,7 @@ Installl brew and update to the latest.
 brew update
 brew upgrade
 brew install coreutils
-brew install swig
+brew install swig  # This is not sure its function.
 ```
 
 ## GPU web driver 387.10.10.10.40.105
@@ -58,6 +58,14 @@ From bazel binary, tensorflow 1.13.1 needs bazel 0.21.0 to compile.
 
 ## Anaconda python 3.6.8
 Download and install anaconda then make a virtual environment with python 3.6.8
+Within python 3.6.8 virtual env
+```
+pip install -U pip six numpy wheel setuptools mock   # -U is upgrade.
+pip install -U keras_applications==1.0.6 --no-deps
+pip install -U --user keras_preprocessing==1.0.5 --no-deps
+```
+Reference
+https://www.tensorflow.org/install/source
 
 ## Tensorflow 1.13.1
 ```
@@ -104,9 +112,7 @@ in
 tensorflow/third_party/gpus/cuda/BUILD.tpl
 ```
 Reference:
-```
 https://github.com/tensorflow/tensorflow/issues/15172
-```
 
 ## modify ~/.bash_profile
 ```
