@@ -68,12 +68,9 @@ It will give an address `http://localhost:6006`, open that in browser and it wil
 
 ### Thoughts
 This was a model with 1.2 million training parameters and a dataset with 60,000 images. 
-
-It took 1 minute and 26 seconds utilizing the NVIDIA GeForce 1070 in my laptop system! 
-
-For reference it took 26 minutes using all cores at 100% of the Intel 6700HQ CPU in that system. 
-
-That's an 18 fold speedup on the GPU!
+It took 1 minute and 26 seconds utilizing the NVIDIA GeForce 1070 in a laptop. 
+For reference it took 26 minutes using all cores at 100% of the Intel 6700HQ CPU.
+That's an 18 fold speedup on the GPU.
 
           
   
