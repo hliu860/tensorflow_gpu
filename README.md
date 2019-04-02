@@ -137,7 +137,7 @@ tensorflow/third_party/gpus/cuda/BUILD.tpl
 Reference:
 https://github.com/tensorflow/tensorflow/issues/15172
 
-## modify ~/.bash_profile
+## Modify ~/.bash_profile
 ```
 export PATH="$PATH:$HOME/bin"  # This is for installing bazel from binary that bazel locates in #HOME/bin
 
@@ -152,7 +152,7 @@ export PATH="/usr/local/cuda/bin":$PATH
 export PATH="/usr/local/opt/llvm/bin:$PATH"   # This not sure if it is useful.
 ```
 
-## configure
+## Configure
 Inside tensorflow 
 ```
 ./configure
@@ -170,12 +170,12 @@ It took more than 1 hour to compile, about 90 mins.
 ```
 bazel build  --config=noaws --config=nogcp --config=nohdfs --config=noignite  --config=nokafka  --config=nonccl --verbose_failures --config=cuda --config=opt --action_env PATH --action_env LD_LIBRARY_PATH --action_env DYLD_LIBRARY_PATH //tensorflow/tools/pip_package:build_pip_package
 ```
-## build wheel file and pip install
+## Build wheel file and pip install
 ```
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 sudo pip install  /tmp/tensorflow_pkg/tensorflow-1.13.1-cp36-cp36m-macosx_10_7_x86_64.whl 
 ```
-## keep wheel file for future use
+## Keep wheel file for future use
 ```
 mv /tmp/tensorflow_pkg/tensorflow-1.13.1-cp36-cp36m-macosx_10_7_x86_64.whl  ~
 ```
