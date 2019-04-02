@@ -1,4 +1,5 @@
 # Tensorflow with Nvidia GPU support for MacOS
+MacBook pro 15 (mid-2014) with Nvidia GT 750M 2G
 
 ## MacOS High Sierra 10.13.6 fresh install
 ## Tensorflow 1.13.1
