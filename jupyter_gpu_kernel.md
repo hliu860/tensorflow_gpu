@@ -14,7 +14,7 @@ Then open a jupyter notebook.
 ```
 jupyter notebook
 ```
-From the 'New' drop-down menu select the 'TensorFlow-GPU' kernel that was added, then starting codeing.
+From the 'New' drop-down menu select the 'TensorFlow-GPU' kernel that was added, then starting coding.
 
 ## MNIST example
 Following are Python snippets you can copy into cells in your Jupyter notebook to setup and train LeNet-5 with MNIST digits data.
@@ -66,6 +66,7 @@ tensorboard --logdir=./logs --host localhost --port 6006
 ```
 It will give an address `http://localhost:6006`, open that in browser and it will show TensorBoard.
 
+### Thoughts
 This was a model with 1.2 million training parameters and a dataset with 60,000 images. 
 
 It took 1 minute and 26 seconds utilizing the NVIDIA GeForce 1070 in my laptop system! 
