@@ -82,7 +82,7 @@ No to unnessary options and yes to CUDA and cuDNN, compute capacity is 3.0
 
 ## A preprocess
 ```
-sudo mkdir /c/tempdir   # This is a workaround for bazel, bazel does not create any files in that dir during compile.
+sudo mkdir /c/tempdir   # This is a workaround for bazel, bazel does not create any files in that dir during compiling.
 echo $TMP
 ```
 ## Compile
