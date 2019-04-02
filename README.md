@@ -6,6 +6,7 @@ Fresh install, no any updates.
 
 ## brew (latest)
 installl brew and update to the latest
+
 ## GPU web driver 387.10.10.10.40.105
 https://github.com/vulgo/webdriver.sh \
 brew tap vulgo/repo \
@@ -13,7 +14,7 @@ brew install webdriver.sh \
 webdriver
 
 ## CUDA driver 410.130
-Download from nvidia website. 
+Download from nvidia website. \
 https://www.nvidia.com/object/mac-driver-archive.html 
 
 ## CUDA Toolkit 10.0
@@ -38,4 +39,7 @@ Download and install anaconda then make a virtual environment with python 3.6
 ## Tensorflow 1.13.1
 ```
 git clone https://github.com/tensorflow/tensorflow.git
+cd tensorflow
+git status
+git checkout r1.13
 ```
