@@ -23,10 +23,15 @@ https://www.nvidia.com/object/mac-driver-archive.html
 https://developer.nvidia.com/cuda-toolkit-archive
 
 ## cuDNN 7.4.1
-Need register on the Nvidia web then download.
+Need register on the Nvidia web then download. \
+```
+tar zxvf ~/Downloads/cudnn-10.0-osx-x64-v7.4.1.5
+sudo mv -v cuda/lib/libcudnn* /usr/local/cuda/lib
+sudo mv -v cuda/include/cudnn.h /usr/local/cuda/include
+```
 
 ## nccl 2.4.2  
-(not configured, not used for signle GPU but will be useful for multiple GPUs)
+(not configured, not used for signle GPU but will be useful for multiple GPUs) \
 Need register on the Nvidia web then download.
 
 ## Xcode 9.2
@@ -86,6 +91,11 @@ in
 ```
 tensorflow/third_party/gpus/cuda/BUILD.tpl
 ```
+Reference:
+```
+https://github.com/tensorflow/tensorflow/issues/15172
+```
+
 ## modify ~/.bash_profile
 ```
 export PATH="$PATH:$HOME/bin"  # This is for installing bazel from binary that bazel locates in #HOME/bin
