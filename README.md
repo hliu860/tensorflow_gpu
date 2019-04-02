@@ -53,9 +53,10 @@ sudo ln -s /usr/local/nccl/include/nccl.h /usr/local/include/third_party/nccl
 ```
 
 ## Xcode 9.2
-From apple app store,change its name to Xcode9.2.app then move it to Application. \
-Change to xcode 9.2 developer environment.
+Download from the apple app store, change its name to Xcode9.2.app then move it to Application. \
+Accept license and change to xcode 9.2 developer environment.
 ```
+sudo xcodebuild -license accept  # accept the license 
 sudo xcode-select -s /Application/Xcode9.2.app
 ```
 
@@ -70,8 +71,11 @@ make -C 1_Utilities/deviceQuery
 ## bazel 0.21.0
 From bazel binary, tensorflow 1.13.1 needs bazel 0.21.0 to compile.
 ```
-# This will install lastest bazel but it didn't work to compile tensorflow 1.13.1, 
-# may work in the future.
+chmod +x bazel-0.21.0-installer-darwin-x86_64.sh
+./bazel-<version>-installer-darwin-x86_64.sh --user
+```
+Use brew will install lastest bazel but it didn't work to compile tensorflow 1.13.1.
+```
 (brew install bazel) 
 ```
 
