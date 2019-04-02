@@ -160,3 +160,8 @@ It should give a matrix in the end.
 [[ 22.  28.]
  [ 49.  64.]]
 ```
+
+# References
+```
+https://gist.github.com/smitshilu/53cf9ff0fd6cdb64cca69a7e2827ed0f
+```
