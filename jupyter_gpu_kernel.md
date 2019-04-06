@@ -4,11 +4,11 @@ https://www.pugetsystems.com/labs/hpc/The-Best-Way-to-Install-TensorFlow-with-GP
 
 This is used after install of tensorflow-gpu, making it a jupyter notebook kernel and can be used for notebook.
 
-Within conda virtual env where tensorflow-gpu was installed (with the tf_gpu environment activated).
+Within conda virtual env where tensorflow_gpu was installed (with the tensorflow_gpu environment activated).
 ```
 conda install jupyter
 conda install ipykernel
-python -m ipykernel install --user --name tf_gpu --display-name "TensorFlow-GPU"   # tf_gpu is the virtual env.
+python -m ipykernel install --user --name tensorflow_gpu --display-name "TensorFlow-GPU"   # tensorflow_gpu is the virtual env.
 ```
 Then open a jupyter notebook.
 ```
