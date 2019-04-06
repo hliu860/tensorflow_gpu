@@ -60,6 +60,7 @@ Accept license and change to xcode 9.2 developer environment.
 ```
 sudo xcodebuild -license accept  # accept the license 
 sudo xcode-select -s /Application/Xcode9.2.app/
+xcodebuild -version
 ```
 
 ## Compile CUDA samples
