@@ -1,7 +1,8 @@
 # Tensorflow with Nvidia GPU support for MacOS
 MacBook pro 15 (mid-2014) with Nvidia GT 750M 2G (GPU compute capacity 3.0)
 
-## MacOS High Sierra 10.13.6 Build 17G65 from the 22m install inside MacOS HS.
+## MacOS High Sierra 10.13.6 
+## Build 17G65 from the 22m installer inside MacOS HS.
 Fresh install, don't install any updates.
 
 ## brew (latest)
