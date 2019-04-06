@@ -200,7 +200,26 @@ c = tf.matmul(a, b)
 
 # Creates a session with log_device_placement set to True.
 sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+```
+It gives
+```
+2019-04-06 14:10:42.268257: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:959] OS X does not support NUMA - returning NUMA node zero
+2019-04-06 14:10:42.268442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: GeForce GT 750M major: 3 minor: 0 memoryClockRate(GHz): 0.9255
+pciBusID: 0000:01:00.0
+totalMemory: 2.00GiB freeMemory: 240.19MiB
+2019-04-06 14:10:42.268456: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-04-06 14:10:42.711416: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-04-06 14:10:42.711449: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-04-06 14:10:42.711454: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-04-06 14:10:42.711545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 190 MB memory) -> physical GPU (device: 0, name: GeForce GT 750M, pci bus id: 0000:01:00.0, compute capability: 3.0)
+Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GT 750M, pci bus id: 0000:01:00.0, compute capability: 3.0
+2019-04-06 14:10:42.713142: I tensorflow/core/common_runtime/direct_session.cc:317] Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GT 750M, pci bus id: 0000:01:00.0, compute capability: 3.0
 
+```
+```
 # Runs the op.
 print(sess.run(c))
 ```
