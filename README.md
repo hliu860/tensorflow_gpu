@@ -89,6 +89,7 @@ Download and install anaconda then make a virtual environment with python 3.6.8
 conda update conda
 conda update anaconda
 conda create -n tensorflow_gpu python=3.6.8
+conda activate tensorflow_gpu
 ```
 Within python 3.6.8 virtual env, do following:
 ```
