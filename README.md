@@ -201,7 +201,9 @@ c = tf.matmul(a, b)
 # Creates a session with log_device_placement set to True.
 sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 ```
-It gives
+Should let mac switch graphics automaticly so more memory for cuda GPU, \
+"System Preferences" "Energy Saver". \
+It gives.
 ```
 2019-04-06 14:10:42.268257: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:959] OS X does not support NUMA - returning NUMA node zero
 2019-04-06 14:10:42.268442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
