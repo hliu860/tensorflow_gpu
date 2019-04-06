@@ -206,8 +206,14 @@ print(sess.run(c))
 ```
 It should give a matrix in the end.
 ```
-[[ 22.  28.]
- [ 49.  64.]]
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+2019-04-06 14:11:02.099622: I tensorflow/core/common_runtime/placer.cc:1059] MatMul (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+a: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2019-04-06 14:11:02.099643: I tensorflow/core/common_runtime/placer.cc:1059] a: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+b: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2019-04-06 14:11:02.099655: I tensorflow/core/common_runtime/placer.cc:1059] b: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+[[22. 28.]
+ [49. 64.]]
 ```
 
 # References
