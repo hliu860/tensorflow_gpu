@@ -61,6 +61,7 @@ Epoch 15/15
 
 ## Look at the job run with TensorBoard
 First, shutdown notebook, ctr + C.
+Then.
 ```
 conda install bleach   # This may not need.
 tensorboard --logdir=./logs --host localhost --port 6006
