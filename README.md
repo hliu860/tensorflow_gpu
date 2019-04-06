@@ -59,7 +59,7 @@ Download from the apple app store, change its name to Xcode9.2.app then move it 
 Accept license and change to xcode 9.2 developer environment.
 ```
 sudo xcodebuild -license accept  # accept the license 
-sudo xcode-select -s /Application/Xcode9.2.app
+sudo xcode-select -s /Application/Xcode9.2.app/
 ```
 
 ## Compile CUDA samples
