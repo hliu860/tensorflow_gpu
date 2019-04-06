@@ -30,6 +30,7 @@ Download and install. \
 https://developer.nvidia.com/cuda-toolkit-archive
 
 ## cuDNN 7.4.1
+https://developer.nvidia.com/rdp/form/cudnn-download-survey 
 Need register on the Nvidia web then download, \
 then move them to `/usr/local/cuda` which is the main cuda directory.
 ```
