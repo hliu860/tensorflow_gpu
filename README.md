@@ -68,7 +68,7 @@ xcodebuild -version
 Compile some CUDA samples to check if the GPU is correctly recognized and supported.
 ```
 cd /Developer/NVIDIA/CUDA-10.0/samples
-make -C 1_Utilities/deviceQuery
+sudo make -C 1_Utilities/deviceQuery
 ./bin/x86_64/darwin/release/deviceQuery
 ```
 
