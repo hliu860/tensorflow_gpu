@@ -22,15 +22,6 @@ brew install webdriver.sh
 webdriver
 ```
 
-## Xcode 9.2
-Download from the apple app store, change its name to Xcode9.2.app then move it to Application. \
-Accept license and change to xcode 9.2 developer environment.
-```
-sudo xcodebuild -license accept  # accept the license 
-sudo xcode-select -s /Application/Xcode9.2.app/
-xcodebuild -version
-```
-
 ## CUDA driver 410.130
 Download and install. \
 https://www.nvidia.com/object/mac-driver-archive.html 
@@ -61,6 +52,15 @@ sudo mkdir -p /usr/local/nccl
 sudo mv * /usr/local/nccl
 sudo mkdir -p /usr/local/include/third_party/nccl
 sudo ln -s /usr/local/nccl/include/nccl.h /usr/local/include/third_party/nccl
+```
+
+## Xcode 9.2
+Download from the apple app store, change its name to Xcode9.2.app then move it to Application. \
+Accept license and change to xcode 9.2 developer environment.
+```
+sudo xcodebuild -license accept  # accept the license 
+sudo xcode-select -s /Application/Xcode9.2.app/
+xcodebuild -version
 ```
 
 ## Compile CUDA samples
