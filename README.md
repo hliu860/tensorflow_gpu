@@ -36,6 +36,7 @@ Need register on the Nvidia web then download, \
 then move them to `/usr/local/cuda` which is the main cuda directory.
 ```
 tar zxvf ~/Downloads/cudnn-10.0-osx-x64-v7.4.1.5.tar
+cd Downloads/
 sudo mv -v cuda/lib/libcudnn* /usr/local/cuda/lib
 sudo mv -v cuda/include/cudnn.h /usr/local/cuda/include
 ```
