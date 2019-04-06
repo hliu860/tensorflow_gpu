@@ -85,6 +85,11 @@ Use brew will install lastest bazel but it didn't work to compile tensorflow 1.1
 
 ## Anaconda python 3.6.8
 Download and install anaconda then make a virtual environment with python 3.6.8 \
+```
+conda update conda
+conda update anaconda
+conda create -n tensorflow_gpu python=3.6.8
+```
 Within python 3.6.8 virtual env, do following:
 ```
 pip install -U pip six numpy wheel setuptools mock   # -U is upgrade.
