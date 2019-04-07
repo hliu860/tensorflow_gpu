@@ -1,5 +1,7 @@
 ## download and install PyCharm with Anaconda plugin
-###Some modifications.
+https://www.jetbrains.com/pycharm/promo/anaconda/
+
+### Some modifications.
 #### 1
 ```
 install_name_tool -change @rpath/libcusolver.10.0.dylib /usr/local/cuda/lib/libcusolver.10.0.dylib -change @rpath/libcudart.10.0.dylib /usr/local/cuda/lib/libcudart.10.0.dylib -change @rpath/libcublas.10.0.dylib /usr/local/cuda/lib/libcublas.10.0.dylib /Users/hl/anaconda3/envs/tensorflow_gpu/lib/python3.6/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so
